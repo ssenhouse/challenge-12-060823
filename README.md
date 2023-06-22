@@ -16,7 +16,7 @@ Since the output of this model is discrete with only two outcomes, healthy loans
 ## Results
 
 * Evaluating Model Performance
-![confusion matrix](/images/12-3-confusion-matrix-general.png)
+![confusion matrix](/Starter_Code/images/12-3-confusion-matrix-general.png)
 
 In order to evalue the performance of the models, we need to build a Confusion Matrix. A confusion matrix allows us to group the model's predictions accordning to whether model accurately predicted the categories. i.e Healthy Loans '0', vs. Risky Loans '1'. By comparing the accurate predictions vs. the inaccurate predictions (confused results) we quantify the model's performance.
 
@@ -33,7 +33,7 @@ To evaluate the confusion matrix we use the following ratios.
  
 # Figure 1 shows the Model 1 Classification Matrix 
   
-![model1 classification matrix](/images/model1classificationmatrix.png)
+![model1 classification matrix](/Starter_Code/images/model1classificationmatrix.png)
 
 # Model 1 Summary
 The model precision of picking healthy loans is 100% and a recall of 99% indicating that the model is excellent at predicting healthy loans. For high risk loans, the model is less precisie at 85%, but still has a recall of 91% indicating that it is a good model at predicting "1" high risk loans, but some loans that are healthy loans may be flagged as risky loans. Given these results, this is a good model but since our objective is to ensure that we capture ALL of the healthy loans, this model does have opportunity for improvement. 
@@ -46,7 +46,7 @@ The model precision of picking healthy loans is 100% and a recall of 99% indicat
 
 # Figure 2 shows the Model 2 Classification Matrix
 
-![model2 classification matrix](/images/model2classificationmatrix.png)
+![model2 classification matrix](/Starter_Code/images/model2classificationmatrix.png)
 
 # Model 2 Summary
 Model 2 produces similar results to the first model in predicting '0' healthy loans with a high precision of 100% and a recall of 99%. However, there is improvement in the results of this model in predicting 'risky' loans as the recall increased from 91% to 99%. Although precision is still at 84% this model is a better model at capturing risky loans. 
