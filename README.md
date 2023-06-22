@@ -15,7 +15,9 @@ Since the output of this model is discrete with only two outcomes, healthy loans
 
 ## Results
 
-* Evaluating Model Performance
+## Evaluating Model Performance
+
+* Figure 1 Confusion Matrix used to evaluate the model performance
 ![confusion matrix](/Starter_Code/images/12-3-confusion-matrix-general.png)
 
 In order to evalue the performance of the models, we need to build a Confusion Matrix. A confusion matrix allows us to group the model's predictions accordning to whether model accurately predicted the categories. i.e Healthy Loans '0', vs. Risky Loans '1'. By comparing the accurate predictions vs. the inaccurate predictions (confused results) we quantify the model's performance.
@@ -31,12 +33,12 @@ To evaluate the confusion matrix we use the following ratios.
   * Precision: "Healthy Loans" = 100%, "Risky Loans" = 85% - Model 1 can predict healthy loans accurately, but may not predict risky loans as precisely 
   * Recall: "Healthy Loans" = 99%, "Risky Loans" = 91% - Model 1 is good at predicting Healthy Loans, but may flag some healthy loans as risky loans that should have been flagged as healthy loans. 
  
-# Figure 1 shows the Model 1 Classification Matrix 
+* Figure 2 shows the Model 1 Classification Matrix 
   
 ![model1 classification matrix](/Starter_Code/images/model1classificationmatrix.png)
 
-# Model 1 Summary
-The model precision of picking healthy loans is 100% and a recall of 99% indicating that the model is excellent at predicting healthy loans. For high risk loans, the model is less precisie at 85%, but still has a recall of 91% indicating that it is a good model at predicting "1" high risk loans, but some loans that are healthy loans may be flagged as risky loans. Given these results, this is a good model but since our objective is to ensure that we capture ALL of the healthy loans, this model does have opportunity for improvement. 
+* Model 1 Summary
+  The model precision of picking healthy loans is 100% and a recall of 99% indicating that the model is excellent at predicting healthy loans. For high risk loans, the model is less precisie at 85%, but still has a recall of 91%   indicating that it is a good model at predicting "1" high risk loans, but some loans that are healthy loans may be flagged as risky loans. Given these results, this is a good model but since our objective is to ensure that we capture ALL of the healthy loans, this model does have opportunity for improvement. 
 
 
 * Machine Learning Model 2 (Oversampling Technique Used):
@@ -44,14 +46,16 @@ The model precision of picking healthy loans is 100% and a recall of 99% indicat
   * Precision = "Healthy Loans" = 100%, "Risky Loans" = 84% - Model 2 can predict healthy loans accurantely, but may not predice risky loans as precisely
   * Recall scores = "Healthy Loans" = 99%, "Risky Loans" = 99% - Model 2 very good at predicting both healthy loans as well as risky loans. 
 
-# Figure 2 shows the Model 2 Classification Matrix
+* Figure 3 shows the Model 2 Classification Matrix
 
 ![model2 classification matrix](/Starter_Code/images/model2classificationmatrix.png)
 
-# Model 2 Summary
-Model 2 produces similar results to the first model in predicting '0' healthy loans with a high precision of 100% and a recall of 99%. However, there is improvement in the results of this model in predicting 'risky' loans as the recall increased from 91% to 99%. Although precision is still at 84% this model is a better model at capturing risky loans. 
+* Model 2 Summary
+  Model 2 produces similar results to the first model in predicting '0' healthy loans with a high precision of 100% and a recall of 99%. However, there is improvement in the results of this model in predicting 'risky' loans as the recall increased from 91% to 99%. Although precision is still at 84% this model is a better model at capturing risky loans. 
 
 ## Summary
+
+My recommendation is to use the imbalanced model (Model 2). This model uses the resampling process to create dummy variables to increase the sample size for the "risky" loans. This process will artificially balance classes 
 
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
 * Which one seems to perform best? How do you know it performs best?
