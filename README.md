@@ -2,6 +2,8 @@
 ---
 # Repository for Challenge 12 Fin Tech BootCamp
 ---
+![image from FinTech challenge 12](/Starter_Code/images/12-5-challenge-image.png)
+
 ## Overview of the Analysis
 The objective of this challenge was to build a machine learning predictive model to predict which loans will be healthy "0" vs. loans with a high risk of defaulting "1". We were to evaluate the model's performance then and recommend the best model to use to solve this problem.
 
